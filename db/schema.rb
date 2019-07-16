@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_14_020953) do
+ActiveRecord::Schema.define(version: 2019_07_16_141030) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 2019_07_14_020953) do
 
   create_table "games", force: :cascade do |t|
     t.string "season"
-    t.string "type"
+    t.string "game_type"
     t.string "date_time"
     t.string "away_team_id"
     t.string "home_team_id"
@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(version: 2019_07_14_020953) do
     t.string "venue_time_zone_tz"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "game_id"
   end
 
   create_table "teams", force: :cascade do |t|
@@ -64,6 +65,7 @@ ActiveRecord::Schema.define(version: 2019_07_14_020953) do
     t.string "link"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "team_id"
   end
 
   add_foreign_key "game_teams_stats", "games"
