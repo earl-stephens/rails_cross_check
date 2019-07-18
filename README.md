@@ -125,18 +125,16 @@ Fork and clone down the repo.  Run `bundle install`, then `rake db:{create,migra
 
 * `biggest_surprise` - Name of the team with the biggest increase between regular season and postseason win percentage. 	Returns a string.
 
-* 
+* `winningest_coach` 	Name of the Coach with the best win percentage for the season.  Returns a string.
 
-* Configuration
+* `worst_coach` - Name of the Coach with the worst win percentage for the season.  Returns a string.
 
-* Database creation
+* `most_accurate_team` - Name of the Team with the best ratio of shots to goals for the season. 	Returns a string.
 
-* Database initialization
+* `least_accurate_team` - Name of the Team with the worst ratio of shots to goals for the season.  Returns a string.
 
-* How to run the test suite
+* `most_hits` - Name of the Team with the most hits in the season.  Returns a string.
 
-* Services (job queues, cache servers, search engines, etc.)
+* `fewest_hits` - Name of the Team with the fewest hits in the season. 	Returns a string.
 
-* Deployment instructions
-
-* ...
+* `power_play_goal_percentage` - Percentage of goals that were power play goals for the season (rounded to the nearest 100th). Returns a float.
